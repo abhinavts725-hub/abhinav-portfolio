@@ -7901,3 +7901,331 @@ html[data-theme="dark"] .showcase-certifications .glass-planet::before {
 html[data-theme="dark"] .showcase-certifications .glass-planet::after {
     background: rgba(235, 240, 250, 0.42);
 }
+
+
+/* ==========================================
+   MOBILE FIX - FULL PROJECT & CERTIFICATE CARDS
+========================================== */
+
+@media (max-width: 760px) {
+
+    /* Give both carousel areas more vertical space */
+    .showcase-projects .projects-carousel-wrapper,
+    .showcase-certifications .cert-carousel-wrapper {
+        height: 550px !important;
+        min-height: 550px !important;
+    }
+
+    .showcase-projects .projects-carousel,
+    .showcase-certifications .cert-carousel {
+        height: 100% !important;
+    }
+
+    /* Increase card height */
+    .showcase-projects .project-card,
+    .showcase-certifications .cert-card {
+        width: min(320px, 82vw) !important;
+        max-width: 82vw !important;
+        height: 480px !important;
+    }
+
+    /* Project card content */
+    .showcase-projects .project-visual {
+        height: 145px !important;
+        min-height: 145px !important;
+    }
+
+    .showcase-projects .project-card-content {
+        padding: 17px 19px 20px !important;
+    }
+
+    .showcase-projects .project-card-content h3 {
+        font-size: 21px !important;
+        line-height: 1.3 !important;
+        margin-bottom: 10px !important;
+    }
+
+    .showcase-projects .project-tech-tags {
+        gap: 6px;
+        margin-bottom: 8px;
+    }
+
+    .showcase-projects .project-view-button {
+        display: inline-flex !important;
+        margin-top: auto !important;
+        padding: 10px 0 !important;
+        visibility: visible !important;
+    }
+
+    /* Certification card content */
+    .showcase-certifications .cert-card-inner {
+        padding: 23px 20px !important;
+    }
+
+    .showcase-certifications .cert-card-content {
+        margin-top: 15px !important;
+    }
+
+    .showcase-certifications .cert-card-content h3 {
+        font-size: 23px !important;
+        line-height: 1.3 !important;
+        margin-bottom: 10px !important;
+    }
+
+    .showcase-certifications .cert-card-content p {
+        margin-bottom: 15px !important;
+    }
+
+    .showcase-certifications .cert-view-button {
+        display: inline-flex !important;
+        visibility: visible !important;
+    }
+}
+
+/* Extra adjustment for smaller phones */
+@media (max-width: 420px) {
+
+    .showcase-projects .projects-carousel-wrapper,
+    .showcase-certifications .cert-carousel-wrapper {
+        height: 530px !important;
+        min-height: 530px !important;
+    }
+
+    .showcase-projects .project-card,
+    .showcase-certifications .cert-card {
+        width: 82vw !important;
+        max-width: 82vw !important;
+        height: 465px !important;
+    }
+
+}
+
+/* ==========================================
+   FINAL MOBILE PROJECT CAROUSEL OVERRIDES
+   Add this at the VERY BOTTOM of CSS
+========================================== */
+
+@media (max-width: 760px) {
+
+    /* Keep the original 3D carousel positioning */
+    .showcase-projects .project-card {
+        position: absolute !important;
+        top: 50% !important;
+        left: 50% !important;
+        isolation: isolate;
+    }
+
+    /* Carousel dimensions */
+    .showcase-projects .projects-carousel-wrapper {
+        position: relative !important;
+        width: 100% !important;
+        height: 550px !important;
+        min-height: 550px !important;
+        overflow: hidden !important;
+    }
+
+    .showcase-projects .projects-carousel {
+        width: 100% !important;
+        height: 100% !important;
+        overflow: hidden !important;
+        perspective: 1100px;
+    }
+
+    /* Project card dimensions */
+    .showcase-projects .project-card {
+        width: min(270px, 68vw) !important;
+        max-width: 68vw !important;
+        height: 480px !important;
+    }
+
+    /* Project image / visual area */
+    .showcase-projects .project-visual {
+        height: 145px !important;
+        min-height: 145px !important;
+    }
+
+    /* Card content */
+    .showcase-projects .project-card-content {
+        padding: 17px 18px 20px !important;
+    }
+
+    .showcase-projects .project-card-content h3 {
+        font-size: 21px !important;
+        line-height: 1.3 !important;
+    }
+
+    /* Explore button */
+    .showcase-projects .project-view-button {
+        display: inline-flex !important;
+        visibility: visible !important;
+    }
+
+    /* Navigation arrows */
+    #projects-prev,
+    #projects-next {
+        position: absolute !important;
+        top: 50% !important;
+        width: 36px !important;
+        height: 36px !important;
+        z-index: 100 !important;
+        transform: translateY(-50%) !important;
+    }
+
+    #projects-prev {
+        left: 2px !important;
+    }
+
+    #projects-next {
+        right: 2px !important;
+    }
+}
+
+
+/* Smaller mobile screens */
+@media (max-width: 420px) {
+
+    .showcase-projects .projects-carousel-wrapper {
+        height: 530px !important;
+        min-height: 530px !important;
+    }
+
+    .showcase-projects .project-card {
+        width: min(240px, 68vw) !important;
+        max-width: 68vw !important;
+        height: 465px !important;
+    }
+
+}
+
+/* MOBILE: Position project navigation arrows in side spaces */
+@media (max-width: 760px) {
+
+    .showcase-projects .projects-carousel-wrapper {
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    #projects-prev,
+    #projects-next {
+        position: absolute !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+        z-index: 100 !important;
+
+        width: 34px !important;
+        height: 34px !important;
+    }
+
+    #projects-prev {
+        left: 4px !important;
+    }
+
+    #projects-next {
+        right: 4px !important;
+    }
+
+    .showcase-projects .project-card {
+        width: min(270px, 68vw) !important;
+    }
+}
+
+/* MOBILE: Move project arrows into the side spaces */
+@media (max-width: 760px) {
+
+    /* Expand wrapper to the full available width */
+    .showcase-projects .projects-carousel-wrapper {
+        position: relative !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        overflow: hidden !important;
+    }
+
+    /* Keep the carousel full width */
+    .showcase-projects .projects-carousel {
+        width: 100% !important;
+    }
+
+    /* Keep the project card centred */
+    .showcase-projects .project-card {
+        left: 50% !important;
+        width: min(240px, 68vw) !important;
+    }
+
+    /* Place rounded arrows at the far sides */
+    #projects-prev,
+    #projects-next {
+        position: absolute !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+        width: 36px !important;
+        height: 36px !important;
+        border-radius: 50% !important;
+        z-index: 999 !important;
+    }
+
+    #projects-prev {
+        left: 8px !important;
+        right: auto !important;
+    }
+
+    #projects-next {
+        right: 8px !important;
+        left: auto !important;
+    }
+}
+
+
+/* ==========================================
+   FINAL FIX - PROJECT ARROWS IN SIDE SPACES
+========================================== */
+
+@media (max-width: 700px) {
+
+    /* Allow arrows to extend beyond the inner container */
+    .showcase-projects,
+    .showcase-projects .projects-container {
+        overflow: visible !important;
+    }
+
+    /* Expand wrapper into the available side spaces */
+    .showcase-projects .projects-carousel-wrapper {
+        position: relative !important;
+        width: calc(100% + 36px) !important;
+        max-width: none !important;
+        margin-left: -18px !important;
+        margin-right: -18px !important;
+        overflow: visible !important;
+    }
+
+    /* Keep the carousel's original width and centre */
+    .showcase-projects .projects-carousel {
+        width: calc(100% - 36px) !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        overflow: visible !important;
+    }
+
+    /* Previous and next buttons */
+    #projects-prev,
+    #projects-next {
+        position: absolute !important;
+        top: 50% !important;
+        width: 38px !important;
+        height: 38px !important;
+        border-radius: 50% !important;
+        transform: translateY(-50%) !important;
+        z-index: 999 !important;
+    }
+
+    #projects-prev {
+        left: 5px !important;
+        right: auto !important;
+    }
+
+    #projects-next {
+        right: 5px !important;
+        left: auto !important;
+    }
+}
