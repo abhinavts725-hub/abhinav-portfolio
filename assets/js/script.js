@@ -2264,7 +2264,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
     }
 
-    const API_URL = "http://127.0.0.1:8000/api/contact";
+    const API_URL = "https://abhinav-portfolio-api.onrender.com/api/contact";
 
     contactForm.addEventListener("submit", async function (event) {
 
