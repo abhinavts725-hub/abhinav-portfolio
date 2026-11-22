@@ -1,0 +1,22 @@
+# Environment variables and secrets
+.env
+.env.*
+backend/.env
+
+# Python cache files
+__pycache__/
+**/__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+**/venv/
+.venv/
+**/.venv/
+
+# IDE settings
+.vscode/
+
+# Python testing/cache
+.pytest_cache/
+

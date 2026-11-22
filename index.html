@@ -1,0 +1,2202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Abhinav TS - AI/ML Engineer and Software Developer Portfolio">
+
+    <title>Abhinav TS | Portfolio</title>
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    
+
+    <!-- Full-width Projects and Certifications layout -->
+    <style>
+        .projects-section,
+        .certifications-section {
+            display: block !important;
+            width: 100% !important;
+            max-width: none !important;
+            min-height: 100vh;
+            height: auto;
+            box-sizing: border-box;
+            border: 0 !important;
+        }
+        .showcase-projects,
+        .showcase-certifications {
+            display: block !important;
+            width: 100% !important;
+            max-width: none !important;
+            min-width: 0 !important;
+            flex: 0 0 100% !important;
+            box-sizing: border-box;
+            border: 0 !important;
+            margin: 0 auto;
+        }
+        .projects-container,
+        .certifications-container {
+            width: min(1280px, calc(100% - 64px)) !important;
+            max-width: 1280px !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            box-sizing: border-box;
+        }
+        .projects-section .projects-container,
+        .certifications-section .certifications-container {
+            padding-top: clamp(64px, 8vh, 100px);
+            padding-bottom: clamp(64px, 8vh, 100px);
+        }
+        @media (max-width: 700px) {
+            .projects-container,
+            .certifications-container {
+                width: calc(100% - 36px) !important;
+            }
+        }
+    </style>
+
+</head>
+
+
+<body class="intro-loading">
+<canvas id="particle-canvas"></canvas>
+
+
+
+<!-- ================= GLASS DOOR INTRO ================= -->
+
+<div class="intro-screen" id="intro-screen">
+
+    <div class="glass-door glass-door-left"></div>
+
+    <div class="glass-door glass-door-right"></div>
+
+    <div class="intro-center-line"></div>
+
+</div>
+
+<!-- ================= END GLASS DOOR INTRO ================= -->
+
+
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="site-header">
+
+        <div class="container">
+
+            <!-- Logo -->
+            <a href="#home" class="logo">
+                ABHINAV TS<span>.</span>
+            </a>
+
+            <!-- Navigation Menu -->
+            <nav class="navbar" id="navbar">
+
+                <ul>
+                    <li>
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+
+                    <li>
+                        <a href="#skills" class="nav-link">Skills</a>
+                    </li>
+
+                    <li>
+                        <a href="#experience" class="nav-link">Experience</a>
+                    </li>
+
+                    <li>
+                        <a href="#projects" class="nav-link">Projects</a>
+                    </li>
+
+                    <li>
+                        <a href="#certifications" class="nav-link">
+                            Certifications
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+
+            </nav>
+
+
+            <!-- Theme Toggle Button -->
+            <button
+                class="theme-toggle"
+                id="theme-toggle"
+                type="button"
+                aria-label="Switch to dark mode"
+                title="Switch theme">
+
+                <i class="fas fa-lightbulb" id="theme-icon"></i>
+
+            </button>
+
+            <!-- Resume Button -->
+            
+            <a href="https://drive.google.com/file/d/15YCItovUKv2WEVzRd9yeKTlsNcgJS1OO/view?usp=sharing"
+            class="download-cv-btn"
+            target="_blank"
+            rel="noopener noreferrer">
+                Download Resume
+                <i class="fas fa-arrow-up-right-from-square"></i>
+            </a>
+
+
+            <!-- Mobile Menu Button -->
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false">
+
+                ☰
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main>
+
+<!-- ================= HOME / HERO SECTION ================= -->
+
+<section id="home" class="home-section">
+
+    <!-- Large Background Typography -->
+    <div class="hero-heading">
+        <h1>
+            <span>AI/ML ENGINEER &amp;</span>
+            <span>SOFTWARE DEVELOPER</span>
+        </h1>
+    </div>
+
+    <!-- Left Introduction Card -->
+    <div class="hero-info-card">
+
+        <p class="hero-eyebrow">HELLO! I'M</p>
+
+        <h2>ABHINAV TS</h2>
+
+        <p class="hero-description">
+            Computer Science Engineering Graduate
+        </p>
+
+        <div class="hero-divider"></div>
+
+        <ul class="hero-specialties">
+            <li> Artificial Intelligence &amp; Machine Learning</li>
+            <li>Generative AI &amp; LLMs</li>
+            <li>Full-Stack Development</li>
+            <li>Data Analytics &amp; Visualization</li>
+        </ul>
+
+    </div>
+
+
+    <!-- Central Profile Photograph -->
+    <div class="hero-image-container">
+
+        <img
+            src="assets/images/abhinav-profile.png"
+            alt="Abhinav TS - AI/ML Engineer and Software Developer"
+            class="hero-profile-image"
+        >
+
+    </div>
+
+
+    <!-- Right Achievement Cards -->
+    <div class="hero-stats">
+
+        <!-- Projects -->
+        <div class="stat-card projects-card">
+
+            <h2>5+</h2>
+
+            <p>Major Projects</p>
+
+            <span class="stat-icon">&lt;/&gt;</span>
+
+        </div>
+
+
+        <!-- Certifications -->
+        <div class="stat-card certifications-card">
+
+            <h2>10+</h2>
+
+            <p>Certifications</p>
+
+            <span class="stat-icon">★</span>
+
+        </div>
+
+    </div>
+
+
+    <!-- Bottom Tagline -->
+    <div class="hero-tagline">
+
+        <div class="tagline-dot"></div>
+
+        <h3>
+            BUILDING INTELLIGENT SOLUTIONS
+            <span>THROUGH CODE AND AI</span>
+        </h3>
+
+        <div class="tagline-underline"></div>
+
+    </div>
+
+</section>
+
+
+
+        <!-- About Section -->
+        
+<!-- ================= ABOUT SECTION ================= -->
+
+<section id="about" class="about-section">
+
+    <div class="about-container">
+
+        <!-- Section Heading -->
+        <div class="about-header">
+
+            <p class="about-label">GET TO KNOW ME</p>
+
+            <h2 class="about-title">
+                ABOUT <span>ME.</span>
+            </h2>
+
+        </div>
+
+        <!-- About Content -->
+        <div class="about-content">
+
+            <!-- Left Column -->
+        
+<div class="about-intro">
+    <h3>TURNING IDEAS INTO <span>INTELLIGENT SOLUTIONS.</span></h3>
+
+    <div class="about-accent-line"></div>
+
+    <div class="about-image-container">
+        <img
+            src="assets/images/about-profile.png"
+            alt="Abhinav TS - Computer Science and Engineering Graduate"
+            class="about-profile-image"
+        >
+    </div>
+</div>
+
+
+            <!-- Right Column -->
+            <div class="about-details">
+
+                <p>
+                    I'm Abhinav TS, a Computer Science and
+                    Engineering graduate passionate about
+                    Artificial Intelligence, Machine Learning,
+                    and Software Development.
+                </p>
+
+                <p>
+                    I have hands-on experience in developing
+                    AI-based applications, building software
+                    solutions, and working with technologies
+                    such as Python, TensorFlow, PyTorch,
+                    FastAPI, and Generative AI.
+                </p>
+
+                
+                <p>
+                    Successfully completed an Interdisciplinary Industrial
+                    Internship in Data Science and Machine Learning under
+                    the mentorship of the International Institute of Medical
+                    Science & Technology Council (IIMSTC), Bangalore.
+                    Gained hands-on experience in data preprocessing,
+                    machine learning workflows, and developing AI-driven
+                    solutions. Recognized with the Diamond Certification
+                    for outstanding performance and successful completion
+                    of the internship.
+                </p>
+
+                <p>
+                    Beyond academics, actively participated in the National
+                    Cadet Corps (NCC), where I developed leadership,
+                    discipline, teamwork, communication, and time management
+                    skills through training, camps, and community service
+                    initiatives.
+                </p>
+
+
+            </div>
+
+        </div>
+
+        <!-- About Highlight Cards -->
+        <div class="about-highlights">
+
+            <div class="about-highlight-card">
+
+                <span class="highlight-number">01</span>
+
+                <h4>EDUCATION</h4>
+                <p>
+                Bachelor of Engineering - Computer Science &amp; Engineering<br>
+                Sambhram Institute of Technology, Bangalore<br>
+                <span>2022 – 2026</span>
+                </p>
+            </div>
+
+
+            <div class="about-highlight-card">
+
+                <span class="highlight-number">02</span>
+
+                <h4>CORE INTERESTS</h4>
+
+                <p>
+                    Artificial Intelligence · 
+                    Machine Learning · 
+                    Generative AI · 
+                    Software Engineering
+                </p>
+
+            </div>
+
+
+            <div class="about-highlight-card">
+
+                <span class="highlight-number">03</span>
+
+                <h4>TECHNICAL FOCUS</h4>
+
+                <p>
+                    AI-Powered Applications · 
+                    LLMs & RAG · 
+                    Agentic AI · 
+                    Backend Development · 
+                    Scalable Systems
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+        <!-- Skills Section -->
+        
+        <!-- ================= SKILLS SECTION ================= -->
+
+        <section id="skills" class="skills-section">
+
+            <div class="skills-container">
+
+                <!-- Section Heading -->
+                
+<!-- Skills Section Heading -->
+<div class="skills-header">
+
+    <div class="skills-heading-content">
+        <p class="skills-label">MY TECHNICAL EXPERTISE</p>
+
+        <h2 class="skills-title">
+            MY <span>SKILLS.</span>
+        </h2>
+
+        <p class="skills-description">
+            Technologies and tools I use to build intelligent applications,
+            develop software solutions, and solve real-world problems.
+        </p>
+    </div>
+
+    <!-- AI Technology Visual -->
+    <div class="skills-visual">
+
+        <div class="skills-orbit orbit-one"></div>
+        <div class="skills-orbit orbit-two"></div>
+        <div class="skills-orbit orbit-three"></div>
+
+        <div class="skills-visual-center">
+            <span>AI</span>
+        </div>
+
+        <span class="skills-node node-one"></span>
+        <span class="skills-node node-two"></span>
+        <span class="skills-node node-three"></span>
+        <span class="skills-node node-four"></span>
+
+        <span class="skills-visual-label label-one">ML</span>
+        <span class="skills-visual-label label-two">CODE</span>
+        <span class="skills-visual-label label-three">DATA</span>
+
+    </div>
+
+</div>
+
+
+                <!-- Skills Categories -->
+                <div class="skills-grid">
+
+                    <!-- Programming & Core CS -->
+                    <div class="skill-category">
+                        <div class="skill-category-header">
+                            <div class="skill-category-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>Programming & Core CS</h3>
+                        </div>
+
+                        <div class="skill-items">
+                            <div class="skill-item"><i class="fab fa-python"></i><span>Python</span></div>
+                            <div class="skill-item"><i class="fas fa-code"></i><span>C++</span></div>
+                            <div class="skill-item"><i class="fas fa-database"></i><span>SQL</span></div>
+                            <div class="skill-item"><i class="fab fa-js"></i><span>JavaScript</span></div>
+                            <div class="skill-item"><i class="fab fa-html5"></i><span>HTML5</span></div>
+                            <div class="skill-item"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+                            <div class="skill-item"><i class="fas fa-project-diagram"></i><span>DSA</span></div>
+                            <div class="skill-item"><i class="fas fa-cubes"></i><span>OOP</span></div>
+                        </div>
+                    </div>
+
+                    <!-- AI / ML & Generative AI -->
+                    <div class="skill-category">
+                        <div class="skill-category-header">
+                            <div class="skill-category-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3>AI / ML & Generative AI</h3>
+                        </div>
+
+                        <div class="skill-items">
+                            <div class="skill-item"><i class="fas fa-chart-line"></i><span>Scikit-Learn</span></div>
+                            <div class="skill-item"><i class="fas fa-brain"></i><span>TensorFlow</span></div>
+                            <div class="skill-item"><i class="fas fa-fire"></i><span>PyTorch</span></div>
+                            <div class="skill-item"><i class="fas fa-robot"></i><span>LLMs</span></div>
+                            <div class="skill-item"><i class="fas fa-network-wired"></i><span>RAG</span></div>
+                            <div class="skill-item"><i class="fas fa-link"></i><span>LangChain</span></div>
+                            <div class="skill-item"><i class="fas fa-project-diagram"></i><span>LangGraph</span></div>
+                            <div class="skill-item"><i class="fas fa-wand-magic-sparkles"></i><span>Agentic AI</span></div>
+                            <div class="skill-item"><i class="fas fa-vector-square"></i><span>Embeddings</span></div>
+                            <div class="skill-item"><i class="fas fa-database"></i><span>Vector DBs</span></div>
+                            <div class="skill-item"><i class="fas fa-table"></i><span>Pandas & NumPy</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Frameworks & Backend -->
+                    <div class="skill-category">
+                        <div class="skill-category-header">
+                            <div class="skill-category-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h3>Frameworks & Backend</h3>
+                        </div>
+
+                        <div class="skill-items">
+                            <div class="skill-item"><i class="fas fa-bolt"></i><span>FastAPI</span></div>
+                            <div class="skill-item"><i class="fas fa-flask"></i><span>Flask</span></div>
+                            <div class="skill-item"><i class="fas fa-exchange-alt"></i><span>REST APIs</span></div>
+                            <div class="skill-item"><i class="fas fa-chart-pie"></i><span>Streamlit</span></div>
+                            <div class="skill-item"><i class="fab fa-docker"></i><span>Docker</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Cloud -->
+                    <div class="skill-category">
+                        <div class="skill-category-header">
+                            <div class="skill-category-icon">
+                                <i class="fas fa-cloud"></i>
+                            </div>
+                            <h3>Tools & Cloud</h3>
+                        </div>
+
+                        <div class="skill-items">
+                            <div class="skill-item"><i class="fab fa-git-alt"></i><span>Git</span></div>
+                            <div class="skill-item"><i class="fab fa-aws"></i><span>AWS</span></div>
+                            <div class="skill-item"><i class="fas fa-cloud"></i><span>Oracle Cloud (OCI)</span></div>
+                            <div class="skill-item"><i class="fas fa-chart-bar"></i><span>Power BI</span></div>
+                            <div class="skill-item"><i class="fas fa-file-excel"></i><span>MS Excel</span></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <!-- Experience Section -->
+        
+<!-- ================= EXPERIENCE SECTION ================= -->
+
+<section id="experience" class="experience-section">
+
+    <div class="experience-container">
+
+        <!-- Section Heading -->
+        <div class="experience-header">
+
+            <p class="experience-label">MY PROFESSIONAL JOURNEY</p>
+
+            <h2 class="experience-title">
+                EXPERIENCE<span>.</span>
+            </h2>
+
+        </div>
+
+        <!-- Experience Slider -->
+        <div class="experience-slider">
+
+            <button class="experience-arrow experience-prev"
+                    id="experience-prev"
+                    aria-label="Previous experience">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <div class="experience-slider-viewport">
+
+                <div class="experience-slider-track" id="experience-track">
+
+                    <!-- 01. INTERNSHIP -->
+                    <article class="experience-card">
+
+                        <div class="experience-card-top">
+                            <span class="experience-number">01 / 05</span>
+                            <span class="experience-type">INTERNSHIP</span>
+                        </div>
+
+                        <div class="experience-card-content">
+
+                            <h3>Data Science and Machine Learning</h3>
+
+                            <h4>
+                                International Institute of Medical Science
+                                and Technology Council (IIMSTC)
+                            </h4>
+
+                            <div class="experience-meta">
+                                <span>
+                                    <i class="far fa-calendar-alt"></i>
+                                    February 2026 – May 2026 · 4 Months
+                                </span>
+
+                                <span>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Bengaluru, Karnataka, India · Hybrid
+                                </span>
+                            </div>
+
+                            <div class="experience-description">
+
+                                <p>
+                                    Successfully completed an Interdisciplinary
+                                    Industrial Internship in Data Science and
+                                    Machine Learning under the mentorship of
+                                    the International Institute of Medical
+                                    Science & Technology Council (IIMSTC),
+                                    Bangalore.
+                                </p>
+
+                                <p>
+                                    Gained hands-on experience in data
+                                    preprocessing, exploratory data analysis,
+                                    machine learning workflows, model
+                                    development and evaluation, and the
+                                    development of AI-driven solutions.
+                                </p>
+
+                                <p>
+                                    Worked with practical machine learning
+                                    approaches and Python-based technologies
+                                    while developing an understanding of
+                                    real-world data science and AI application
+                                    workflows.
+                                </p>
+
+                                <p>
+                                    Awarded the <strong>Diamond Certification</strong>
+                                    in recognition of outstanding performance
+                                    and successful completion of the internship.
+                                </p>
+
+                            </div>
+
+                            <div class="experience-certification">
+
+                                <div class="certification-label">
+                                    <i class="fas fa-award"></i>
+                                    <span>Diamond Certification</span>
+                                </div>
+
+                                <button
+                                    type="button"
+                                    class="certificate-view"
+                                    id="certificate-view"
+                                    aria-label="Tap to view Diamond Certification"
+                                    title="Tap to view Diamond Certification">
+
+                                    <i class="far fa-eye"></i>
+                                    <span>Tap to view</span>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 02. WEB DEVELOPMENT USING GEN AI -->
+                    <article class="experience-card">
+
+                        <div class="experience-card-top">
+                            <span class="experience-number">02 / 05</span>
+                            <span class="experience-type">WORKSHOP</span>
+                        </div>
+
+                        <div class="experience-card-content">
+
+                            <h3>Web Development Using Gen AI</h3>
+
+                            <h4>VTRICKS Technologies</h4>
+
+                            <div class="experience-meta">
+                                <span>
+                                    <i class="far fa-calendar-alt"></i>
+                                    17 November 2025 – 22 November 2025
+                                </span>
+                            </div>
+
+                            <div class="experience-description">
+
+                                <p>
+                                    Participated in a practical workshop
+                                    focused on integrating Generative AI
+                                    tools into modern web development
+                                    workflows, exploring how AI can assist
+                                    developers throughout the application
+                                    development process.
+                                </p>
+
+                                <ul>
+                                    <li>
+                                        Used Generative AI tools for code
+                                        generation, UI prototyping and
+                                        debugging in project-based
+                                        simulations, reducing development
+                                        time by approximately 40%.
+                                    </li>
+
+                                    <li>
+                                        Designed prompt pipelines to guide
+                                        AI-assisted development tasks and
+                                        improve the consistency of generated
+                                        outputs.
+                                    </li>
+
+                                    <li>
+                                        Applied basic prompt engineering
+                                        techniques to refine instructions,
+                                        improve response relevance and
+                                        increase response accuracy by
+                                        approximately 20%.
+                                    </li>
+
+                                    <li>
+                                        Explored practical approaches to
+                                        combining developer workflows with
+                                        AI-assisted coding and interface
+                                        development.
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                            <div class="experience-technologies">
+                                <span>Generative AI</span>
+                                <span>Web Development</span>
+                                <span>Prompt Engineering</span>
+                                <span>UI Prototyping</span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 03. CLOUD INFRASTRUCTURE MANAGEMENT -->
+                    <article class="experience-card">
+
+                        <div class="experience-card-top">
+                            <span class="experience-number">03 / 05</span>
+                            <span class="experience-type">WORKSHOP</span>
+                        </div>
+
+                        <div class="experience-card-content">
+
+                            <h3>Cloud Infrastructure Management</h3>
+
+                            <h4>VTRICKS Technologies</h4>
+
+                            <div class="experience-meta">
+                                <span>
+                                    <i class="far fa-calendar-alt"></i>
+                                    17 March 2025 – 23 March 2025
+                                </span>
+                            </div>
+
+                            <div class="experience-description">
+
+                                <p>
+                                    Participated in a hands-on workshop
+                                    covering cloud infrastructure
+                                    configuration, service deployment
+                                    and basic automation practices in
+                                    simulated industry environments.
+                                </p>
+
+                                <ul>
+                                    <li>
+                                        Configured and deployed more than
+                                        three cloud-based service instances
+                                        in simulated industry environments.
+                                    </li>
+
+                                    <li>
+                                        Explored cloud infrastructure
+                                        setup, service configuration
+                                        and deployment workflows.
+                                    </li>
+
+                                    <li>
+                                        Implemented basic automation
+                                        workflows to simplify repetitive
+                                        infrastructure setup tasks.
+                                    </li>
+
+                                    <li>
+                                        Reduced manual setup time by
+                                        approximately 40% in lab
+                                        simulations through basic
+                                        automation practices.
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                            <div class="experience-technologies">
+                                <span>Cloud Computing</span>
+                                <span>Infrastructure Management</span>
+                                <span>Deployment</span>
+                                <span>Automation</span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 04. ROBOTICS WORKSHOP -->
+                    <article class="experience-card">
+
+                        <div class="experience-card-top">
+                            <span class="experience-number">04 / 05</span>
+                            <span class="experience-type">WORKSHOP</span>
+                        </div>
+
+                        <div class="experience-card-content">
+
+                            <h3>Robotics Workshop</h3>
+
+                            <h4>VTRICKS Technologies</h4>
+
+                            <div class="experience-meta">
+                                <span>
+                                    <i class="far fa-calendar-alt"></i>
+                                    19 July 2024 – 27 July 2024
+                                </span>
+                            </div>
+
+                            <div class="experience-description">
+
+                                <p>
+                                    Participated in a practical robotics
+                                    workshop introducing the fundamentals
+                                    of robotic systems, their design,
+                                    programming and real-world applications.
+                                </p>
+
+                                <ul>
+                                    <li>
+                                        Developed foundational knowledge
+                                        of robotic system architecture,
+                                        basic components and operating
+                                        principles.
+                                    </li>
+
+                                    <li>
+                                        Explored the fundamentals of
+                                        programming robotic systems
+                                        through guided practical sessions.
+                                    </li>
+
+                                    <li>
+                                        Built and programmed basic
+                                        robotic models, gaining
+                                        hands-on exposure to
+                                        implementation and testing.
+                                    </li>
+
+                                    <li>
+                                        Strengthened problem-solving
+                                        and practical technical skills
+                                        through structured robotics
+                                        activities.
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                            <div class="experience-technologies">
+                                <span>Robotics</span>
+                                <span>Programming</span>
+                                <span>System Design</span>
+                                <span>Practical Implementation</span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- 05. DATA ANALYTICS -->
+                    <article class="experience-card">
+
+                        <div class="experience-card-top">
+                            <span class="experience-number">05 / 05</span>
+                            <span class="experience-type">WORKSHOP</span>
+                        </div>
+
+                        <div class="experience-card-content">
+
+                            <h3>Data Analytics</h3>
+
+                            <h4>VTRICKS Technologies</h4>
+
+                            <div class="experience-meta">
+                                <span>
+                                    <i class="far fa-calendar-alt"></i>
+                                    15 November 2023 – 21 November 2023
+                                </span>
+                            </div>
+
+                            <div class="experience-description">
+
+                                <p>
+                                    Completed a practical workshop in
+                                    Data Analytics focused on transforming
+                                    raw datasets into meaningful insights
+                                    through data processing, analysis
+                                    and interactive visualization.
+                                </p>
+
+                                <ul>
+                                    <li>
+                                        Designed more than five interactive
+                                        dashboards using Power BI to
+                                        visualize business case datasets
+                                        and communicate analytical findings.
+                                    </li>
+
+                                    <li>
+                                        Processed and analyzed datasets
+                                        containing more than 1,000 records
+                                        using data transformation
+                                        techniques.
+                                    </li>
+
+                                    <li>
+                                        Worked with data preparation,
+                                        transformation and visualization
+                                        workflows to organize information
+                                        for reporting.
+                                    </li>
+
+                                    <li>
+                                        Reduced data reporting time by
+                                        approximately 50% through an
+                                        automated visual reporting model.
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                            <div class="experience-technologies">
+                                <span>Power BI</span>
+                                <span>Data Analytics</span>
+                                <span>Data Transformation</span>
+                                <span>Dashboards</span>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+            <button class="experience-arrow experience-next"
+                    id="experience-next"
+                    aria-label="Next experience">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
+        </div>
+
+        <!-- Slider Indicators -->
+        <div class="experience-indicators" id="experience-indicators">
+
+            <button class="experience-dot active"
+                    data-index="0"
+                    aria-label="Internship"></button>
+
+            <button class="experience-dot"
+                    data-index="1"
+                    aria-label="Web Development Using Gen AI"></button>
+
+            <button class="experience-dot"
+                    data-index="2"
+                    aria-label="Cloud Infrastructure Management"></button>
+
+            <button class="experience-dot"
+                    data-index="3"
+                    aria-label="Robotics Workshop"></button>
+
+            <button class="experience-dot"
+                    data-index="4"
+                    aria-label="Data Analytics"></button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= DIAMOND CERTIFICATE POPUP ================= -->
+
+<div class="certificate-modal"
+     id="certificate-modal"
+     aria-hidden="true">
+
+    <div class="certificate-modal-backdrop"
+         id="certificate-backdrop"></div>
+
+    <div class="certificate-modal-content"
+         role="dialog"
+         aria-modal="true"
+         aria-label="Diamond Internship Certificate">
+
+        <button type="button"
+                class="certificate-close"
+                id="certificate-close"
+                aria-label="Close certificate">
+            <i class="fas fa-times"></i>
+        </button>
+
+        <img
+            src="assets/images/diamond-certification.png"
+            alt="Abhinav TS - Diamond Internship Certificate"
+            class="certificate-image">
+
+    </div>
+
+</div>
+
+
+
+        <!-- Projects Section -->
+        
+<!-- ================= PROJECTS SECTION ================= -->
+
+<!-- ================= PROJECTS SECTION ================= -->
+
+<section id="projects" class="projects-section">
+    <!-- Floating Network Background -->
+<canvas id="project-network-bg" aria-hidden="true"></canvas>
+
+    <div class="showcase-projects">
+
+        <div class="projects-container">
+
+        <!-- Section Heading -->
+        <div class="projects-header">
+
+            <p class="projects-label">MY WORK & CREATIONS</p>
+
+            <h2 class="projects-title">
+                PROJECTS<span>.</span>
+            </h2>
+
+            <p class="projects-subtitle">
+                Exploring ideas, building intelligent solutions
+                and transforming concepts into real-world applications.
+            </p>
+
+        </div>
+
+
+        <!-- 3D PROJECT CAROUSEL -->
+        <div class="projects-carousel-wrapper">
+
+            <button
+                class="projects-arrow projects-prev"
+                id="projects-prev"
+                aria-label="Previous project">
+
+                <i class="fas fa-chevron-left"></i>
+
+            </button>
+
+
+            <div class="projects-carousel" id="projects-carousel">
+
+                <div class="projects-carousel-track" id="projects-track">
+
+
+                   
+<!-- PROJECT 01 : AGRINEX AI -->
+
+<article class="project-card" data-index="0" data-project="agrinex">
+
+    <div class="project-card-inner">
+
+        <div class="project-visual agrinex-visual">
+
+            <span class="project-number">01</span>
+
+            <div class="project-icon-beam">
+                <span class="beam-ring"></span>
+                <span class="beam-rays"></span>
+                <i class="fas fa-leaf project-main-icon"></i>
+            </div>
+
+            <span class="project-category">
+                AI / DEEP LEARNING
+            </span>
+
+        </div>
+
+        <div class="project-card-content">
+
+            <p class="project-card-label">FEATURED PROJECT</p>
+
+            <h3>AgriNex AI</h3>
+
+            <p>
+                Integrated Smart Farming Platform
+                powered by Deep Learning and Generative AI.
+            </p>
+
+            <div class="project-tech-tags">
+                <span>Python</span>
+                <span>TensorFlow</span>
+                <span>FastAPI</span>
+                <span>Gemini</span>
+            </div>
+
+            <button class="project-view-button" type="button">
+                Explore Project
+                <i class="fas fa-arrow-right"></i>
+            </button>
+
+        </div>
+    </div>
+</article>
+
+
+<!-- PROJECT 02 : INFEULA -->
+
+<article class="project-card" data-index="1" data-project="infeula">
+
+    <div class="project-card-inner">
+
+        <div class="project-visual infeula-visual">
+
+            <span class="project-number">02</span>
+
+            <div class="project-icon-beam">
+                <span class="beam-ring"></span>
+                <span class="beam-rays"></span>
+                <i class="fas fa-newspaper project-main-icon"></i>
+            </div>
+
+            <span class="project-category">GENERATIVE AI</span>
+
+        </div>
+
+        <div class="project-card-content">
+
+            <p class="project-card-label">AI-POWERED APPLICATION</p>
+
+            <h3>INFEULA</h3>
+
+            <p>
+                Intelligent AI News Feed Extension
+                for personalized news discovery.
+            </p>
+
+            <div class="project-tech-tags">
+                <span>React</span>
+                <span>TypeScript</span>
+                <span>LangChain</span>
+                <span>OpenAI</span>
+            </div>
+
+            <button class="project-view-button" type="button">
+                Explore Project
+                <i class="fas fa-arrow-right"></i>
+            </button>
+
+        </div>
+    </div>
+</article>
+
+
+<!-- PROJECT 03 : CLEAN COOKSTOVE -->
+
+<article class="project-card" data-index="2" data-project="cookstove">
+
+    <div class="project-card-inner">
+
+        <div class="project-visual cookstove-visual">
+
+            <span class="project-number">03</span>
+
+            <div class="project-icon-beam">
+                <span class="beam-ring"></span>
+                <span class="beam-rays"></span>
+                <i class="fas fa-fire project-main-icon"></i>
+            </div>
+
+            <span class="project-category">MACHINE LEARNING</span>
+
+        </div>
+
+        <div class="project-card-content">
+
+            <p class="project-card-label">CLASSIFICATION MODEL</p>
+
+            <h3>Clean Cookstove Prediction</h3>
+
+            <p>
+                Predicting household adoption of
+                clean cooking technologies using ML.
+            </p>
+
+            <div class="project-tech-tags">
+                <span>Python</span>
+                <span>Pandas</span>
+                <span>Scikit-learn</span>
+                <span>Logistic Regression</span>
+            </div>
+
+            <button class="project-view-button" type="button">
+                Explore Project
+                <i class="fas fa-arrow-right"></i>
+            </button>
+
+        </div>
+    </div>
+</article>
+
+
+<!-- PROJECT 04 : RURAL ELECTRIFICATION -->
+
+<article class="project-card" data-index="3" data-project="electrification">
+
+    <div class="project-card-inner">
+
+        <div class="project-visual electrification-visual">
+
+            <span class="project-number">04</span>
+
+            <div class="project-icon-beam">
+                <span class="beam-ring"></span>
+                <span class="beam-rays"></span>
+                <i class="fas fa-bolt project-main-icon"></i>
+            </div>
+
+            <span class="project-category">MACHINE LEARNING</span>
+
+        </div>
+
+        <div class="project-card-content">
+
+            <p class="project-card-label">REGRESSION MODEL</p>
+
+            <h3>Rural Electrification Predictor</h3>
+
+            <p>
+                Estimating rural settlement electrification
+                using infrastructure and population data.
+            </p>
+
+            <div class="project-tech-tags">
+                <span>Python</span>
+                <span>Pandas</span>
+                <span>Scikit-learn</span>
+                <span>Linear Regression</span>
+            </div>
+
+            <button class="project-view-button" type="button">
+                Explore Project
+                <i class="fas fa-arrow-right"></i>
+            </button>
+
+        </div>
+    </div>
+</article>
+
+
+<!-- PROJECT 05 : YOUTUBE AI -->
+
+<article class="project-card" data-index="4" data-project="youtube">
+
+    <div class="project-card-inner">
+
+        <div class="project-visual youtube-visual">
+
+            <span class="project-number">05</span>
+
+            <div class="project-icon-beam">
+                <span class="beam-ring"></span>
+                <span class="beam-rays"></span>
+                <i class="fab fa-youtube project-main-icon"></i>
+            </div>
+
+            <span class="project-category">GENERATIVE AI</span>
+
+        </div>
+
+        <div class="project-card-content">
+
+            <p class="project-card-label">AI WEB APPLICATION</p>
+
+            <h3>AI YouTube Summarizer</h3>
+
+            <p>
+                Automatically extracting video transcripts
+                and generating structured AI summaries.
+            </p>
+
+            <div class="project-tech-tags">
+                <span>Python</span>
+                <span>Streamlit</span>
+                <span>Gemini 2.5 Flash</span>
+            </div>
+
+            <button class="project-view-button" type="button">
+                Explore Project
+                <i class="fas fa-arrow-right"></i>
+            </button>
+
+        </div>
+    </div>
+</article>
+
+
+                </div>
+
+            </div>
+
+
+            <button
+                class="projects-arrow projects-next"
+                id="projects-next"
+                aria-label="Next project">
+
+                <i class="fas fa-chevron-right"></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- CAROUSEL INDICATORS -->
+
+        <div class="projects-indicators" id="projects-indicators">
+
+            <button class="projects-dot active" data-index="0"
+                aria-label="Project 1"></button>
+
+            <button class="projects-dot" data-index="1"
+                aria-label="Project 2"></button>
+
+            <button class="projects-dot" data-index="2"
+                aria-label="Project 3"></button>
+
+            <button class="projects-dot" data-index="3"
+                aria-label="Project 4"></button>
+
+            <button class="projects-dot" data-index="4"
+                aria-label="Project 5"></button>
+
+        </div>
+
+
+        <p class="projects-navigation-hint">
+            <i class="fas fa-arrows-left-right"></i>
+            Drag, swipe or use the arrows to explore projects
+        </p>
+
+                </div>
+            <!-- END PROJECTS CONTAINER -->
+
+        </div>
+        <!-- END PROJECTS HALF -->
+
+
+
+</section>
+
+<!-- ================= CERTIFICATIONS SECTION ================= -->
+
+<section id="certifications" class="certifications-section">
+
+        <div class="showcase-certifications">
+
+    <!-- 3D GLASS PLANETS BACKGROUND -->
+    <div class="glass-planets-layer" id="glass-planets-layer"
+         aria-hidden="true">
+    </div>
+
+    <!-- CERTIFICATIONS CONTENT -->
+
+            <!-- Certification section will be added in the next step -->
+
+        
+<!-- CERTIFICATIONS HEADER -->
+<div class="certifications-container">
+
+    <div class="certifications-header">
+        <p class="certifications-label">MY ACHIEVEMENTS</p>
+
+        <h2 class="certifications-title">
+            CERTIFICATIONS<span>.</span>
+        </h2>
+
+        <p class="certifications-subtitle">
+            Continuous learning, professional growth
+            and technical excellence.
+        </p>
+    </div>
+
+    <!-- CERTIFICATION CAROUSEL -->
+    <div class="cert-carousel-wrapper">
+
+        <button class="cert-arrow cert-prev"
+            id="cert-prev" type="button"
+            aria-label="Previous certification">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+
+        <div class="cert-carousel" id="cert-carousel">
+            <div class="cert-carousel-track" id="cert-track">
+
+                
+<!-- 1. AWS DEVELOPER ASSOCIATE -->
+<article class="cert-card" data-index="0">
+    <div class="cert-card-inner">
+        <div class="cert-card-top">
+            <span class="cert-issuer">INFOSYS SPRINGBOARD</span>
+            <i class="fab fa-aws"></i>
+        </div>
+        <div class="cert-icon-area">
+            <i class="fas fa-cloud"></i>
+        </div>
+        <div class="cert-card-content">
+            <span class="cert-category">CLOUD DEVELOPMENT</span>
+            <h3>AWS Certified Developer – Associate</h3>
+            <p>Infosys Springboard</p>
+            <button class="cert-view-button" data-cert="aws-developer-associate.jpg">
+                <i class="fas fa-eye"></i> View Certificate
+            </button>
+        </div>
+    </div>
+</article>
+
+<!-- 2. DATA ENGINEERING AWS ANALYTICS -->
+<article class="cert-card" data-index="1">
+    <div class="cert-card-inner">
+        <div class="cert-card-top">
+            <span class="cert-issuer">UDEMY</span>
+            <i class="fas fa-database"></i>
+        </div>
+        <div class="cert-icon-area">
+            <i class="fas fa-chart-line"></i>
+        </div>
+        <div class="cert-card-content">
+            <span class="cert-category">DATA ANALYTICS</span>
+            <h3>Data Engineering using AWS Data Analytics</h3>
+            <p>Udemy</p>
+            <button class="cert-view-button" data-cert="aws-data-analytics.jpg">
+                <i class="fas fa-eye"></i> View Certificate
+            </button>
+        </div>
+    </div>
+</article>
+
+<!-- 3. INTRODUCTION TO MACHINE LEARNING -->
+<article class="cert-card" data-index="2">
+    <div class="cert-card-inner">
+        <div class="cert-card-top">
+            <span class="cert-issuer">INFOSYS SPRINGBOARD</span>
+            <i class="fas fa-graduation-cap"></i>
+        </div>
+        <div class="cert-icon-area">
+            <i class="fas fa-diagram-project"></i>
+        </div>
+        <div class="cert-card-content">
+            <span class="cert-category">MACHINE LEARNING</span>
+            <h3>Introduction to Machine Learning</h3>
+            <p>Infosys Springboard</p>
+            <button class="cert-view-button" data-cert="introduction-machine-learning.jpg">
+                <i class="fas fa-eye"></i> View Certificate
+            </button>
+        </div>
+    </div>
+</article>
+
+<!-- 4. INTRODUCTION TO CLOUD COMPUTING -->
+<article class="cert-card" data-index="3">
+    <div class="cert-card-inner">
+        <div class="cert-card-top">
+            <span class="cert-issuer">INFOSYS SPRINGBOARD</span>
+            <i class="fas fa-cloud"></i>
+        </div>
+        <div class="cert-icon-area">
+            <i class="fas fa-cloud-arrow-up"></i>
+        </div>
+        <div class="cert-card-content">
+            <span class="cert-category">CLOUD COMPUTING</span>
+            <h3>Introduction to Cloud Computing</h3>
+            <p>Infosys Springboard</p>
+            <button class="cert-view-button" data-cert="cloud-computing.jpg">
+                <i class="fas fa-eye"></i> View Certificate
+            </button>
+        </div>
+    </div>
+</article>
+
+<!-- 5. GENERATIVE AI -->
+<article class="cert-card" data-index="4">
+    <div class="cert-card-inner">
+        <div class="cert-card-top">
+            <span class="cert-issuer">INFOSYS SPRINGBOARD</span>
+            <i class="fas fa-robot"></i>
+        </div>
+        <div class="cert-icon-area">
+            <i class="fas fa-brain"></i>
+        </div>
+        <div class="cert-card-content">
+            <span class="cert-category">GENERATIVE AI</span>
+            <h3>Generative AI Unleashing</h3>
+            <p>Infosys Springboard</p>
+            <button class="cert-view-button" data-cert="generative-ai.jpg">
+                <i class="fas fa-eye"></i> View Certificate
+            </button>
+        </div>
+    </div>
+</article>
+
+<!-- 6. BLOCKCHAIN A-Z -->
+<article class="cert-card" data-index="5">
+    <div class="cert-card-inner">
+        <div class="cert-card-top">
+            <span class="cert-issuer">UDEMY</span>
+            <i class="fas fa-cubes"></i>
+        </div>
+        <div class="cert-icon-area">
+            <i class="fas fa-cubes"></i>
+        </div>
+        <div class="cert-card-content">
+            <span class="cert-category">BLOCKCHAIN</span>
+            <h3>Blockchain A-Z: Build a Blockchain, a Crypto</h3>
+            <p>Udemy</p>
+            <button class="cert-view-button" data-cert="blockchain-az.jpg">
+                <i class="fas fa-eye"></i> View Certificate
+            </button>
+        </div>
+    </div>
+</article>
+
+<!-- 7. UIPATH AI COMPUTER VISION -->
+<article class="cert-card" data-index="6">
+    <div class="cert-card-inner">
+        <div class="cert-card-top">
+            <span class="cert-issuer">UIPATH</span>
+            <i class="fas fa-eye"></i>
+        </div>
+        <div class="cert-icon-area">
+            <i class="fas fa-laptop-code"></i>
+        </div>
+        <div class="cert-card-content">
+            <span class="cert-category">AI COMPUTER VISION</span>
+            <h3>UiPath AI Computer Vision</h3>
+            <p>UiPath</p>
+            <button class="cert-view-button" data-cert="uipath-ai-computer-vision.jpg">
+                <i class="fas fa-eye"></i> View Certificate
+            </button>
+        </div>
+    </div>
+</article>
+
+<!-- 8. UIPATH AUTOMATION -->
+<article class="cert-card" data-index="7">
+    <div class="cert-card-inner">
+        <div class="cert-card-top">
+            <span class="cert-issuer">UIPATH</span>
+            <i class="fas fa-gears"></i>
+        </div>
+        <div class="cert-icon-area">
+            <i class="fas fa-laptop-code"></i>
+        </div>
+        <div class="cert-card-content">
+            <span class="cert-category">AUTOMATION</span>
+            <h3>Introduction to Automation</h3>
+            <p>UiPath</p>
+            <button class="cert-view-button" data-cert="uipath-automation.jpg">
+                <i class="fas fa-eye"></i> View Certificate
+            </button>
+        </div>
+    </div>
+</article>
+
+<!-- 9. AWS IOT -->
+<article class="cert-card" data-index="8">
+    <div class="cert-card-inner">
+        <div class="cert-card-top">
+            <span class="cert-issuer">INFOSYS SPRINGBOARD</span>
+            <i class="fas fa-microchip"></i>
+        </div>
+        <div class="cert-icon-area">
+            <i class="fas fa-microchip"></i>
+        </div>
+        <div class="cert-card-content">
+            <span class="cert-category">INTERNET OF THINGS</span>
+            <h3>Introduction to AWS IoT</h3>
+            <p>Infosys Springboard</p>
+            <button class="cert-view-button" data-cert="aws-iot.jpg">
+                <i class="fas fa-eye"></i> View Certificate
+            </button>
+        </div>
+    </div>
+</article>
+
+<!-- 10. BANKING -->
+<article class="cert-card" data-index="9">
+    <div class="cert-card-inner">
+        <div class="cert-card-top">
+            <span class="cert-issuer">INFOSYS SPRINGBOARD</span>
+            <i class="fas fa-building-columns"></i>
+        </div>
+        <div class="cert-icon-area">
+            <i class="fas fa-building-columns"></i>
+        </div>
+        <div class="cert-card-content">
+            <span class="cert-category">BANKING</span>
+            <h3>Young Industry Enthusiast – Banking</h3>
+            <p>Infosys Springboard</p>
+            <button class="cert-view-button" data-cert="young-industry-banking.jpg">
+                <i class="fas fa-eye"></i> View Certificate
+            </button>
+        </div>
+    </div>
+</article>
+
+<!-- 11. CAPITAL MARKETS -->
+<article class="cert-card" data-index="10">
+    <div class="cert-card-inner">
+        <div class="cert-card-top">
+            <span class="cert-issuer">INFOSYS SPRINGBOARD</span>
+            <i class="fas fa-chart-pie"></i>
+        </div>
+        <div class="cert-icon-area">
+            <i class="fas fa-chart-pie"></i>
+        </div>
+        <div class="cert-card-content">
+            <span class="cert-category">CAPITAL MARKETS</span>
+            <h3>Young Industry Enthusiast – Capital Markets</h3>
+            <p>Infosys Springboard</p>
+            <button class="cert-view-button" data-cert="young-industry-capital-markets.jpg">
+                <i class="fas fa-eye"></i> View Certificate
+            </button>
+        </div>
+    </div>
+</article>
+
+<!-- 12. RETAIL -->
+<article class="cert-card" data-index="11">
+    <div class="cert-card-inner">
+        <div class="cert-card-top">
+            <span class="cert-issuer">INFOSYS SPRINGBOARD</span>
+            <i class="fas fa-store"></i>
+        </div>
+        <div class="cert-icon-area">
+            <i class="fas fa-cart-shopping"></i>
+        </div>
+        <div class="cert-card-content">
+            <span class="cert-category">RETAIL INDUSTRY</span>
+            <h3>Young Industry Enthusiast – Retail</h3>
+            <p>Infosys Springboard</p>
+            <button class="cert-view-button" data-cert="young-industry-retail.jpg">
+                <i class="fas fa-eye"></i> View Certificate
+            </button>
+        </div>
+    </div>
+</article>
+
+<!-- 13. NCC ARMY A -->
+<article class="cert-card" data-index="12">
+    <div class="cert-card-inner">
+        <div class="cert-card-top">
+            <span class="cert-issuer">NATIONAL CADET CORPS</span>
+            <i class="fas fa-shield-halved"></i>
+        </div>
+        <div class="cert-icon-area">
+            <i class="fas fa-shield-halved"></i>
+        </div>
+        <div class="cert-card-content">
+            <span class="cert-category">NCC ARMY WING</span>
+            <h3>NCC Army – ‘A’ Certificate</h3>
+            <p>National Cadet Corps</p>
+            <button class="cert-view-button" data-cert="ncc-army-a.jpg">
+                <i class="fas fa-eye"></i> View Certificate
+            </button>
+        </div>
+    </div>
+</article>
+
+<!-- 14. NCC AIR FORCE B -->
+<article class="cert-card" data-index="13">
+    <div class="cert-card-inner">
+        <div class="cert-card-top">
+            <span class="cert-issuer">NATIONAL CADET CORPS</span>
+            <i class="fas fa-plane"></i>
+        </div>
+        <div class="cert-icon-area">
+            <i class="fas fa-plane"></i>
+        </div>
+        <div class="cert-card-content">
+            <span class="cert-category">NCC AIR FORCE WING</span>
+            <h3>NCC Air Force Wing – ‘B’ Certificate</h3>
+            <p>National Cadet Corps</p>
+            <button class="cert-view-button" data-cert="ncc-air-force-b.jpg">
+                <i class="fas fa-eye"></i> View Certificate
+            </button>
+        </div>
+    </div>
+</article>
+
+<!-- 15. NCC ARMY B -->
+<article class="cert-card" data-index="14">
+    <div class="cert-card-inner">
+        <div class="cert-card-top">
+            <span class="cert-issuer">NATIONAL CADET CORPS</span>
+            <i class="fas fa-shield-halved"></i>
+        </div>
+        <div class="cert-icon-area">
+            <i class="fas fa-shield-halved"></i>
+        </div>
+        <div class="cert-card-content">
+            <span class="cert-category">NCC ARMY WING</span>
+            <h3>NCC Army – ‘B’ Certificate</h3>
+            <p>National Cadet Corps</p>
+            <button class="cert-view-button" data-cert="ncc-army-b.jpg">
+                <i class="fas fa-eye"></i> View Certificate
+            </button>
+        </div>
+    </div>
+</article>
+
+<!-- 16. NCC ARMY C -->
+<article class="cert-card" data-index="15">
+    <div class="cert-card-inner">
+        <div class="cert-card-top">
+            <span class="cert-issuer">NATIONAL CADET CORPS</span>
+            <i class="fas fa-shield-halved"></i>
+        </div>
+        <div class="cert-icon-area">
+            <i class="fas fa-shield-halved"></i>
+        </div>
+        <div class="cert-card-content">
+            <span class="cert-category">NCC ARMY WING</span>
+            <h3>NCC Army Wing – ‘C’ Certificate</h3>
+            <p>National Cadet Corps</p>
+            <span class="cert-no-image">
+                <i class="fas fa-award"></i> CERTIFICATION
+            </span>
+        </div>
+    </div>
+</article>
+
+<!-- 17. EBSB CAMP -->
+<article class="cert-card" data-index="16">
+    <div class="cert-card-inner">
+        <div class="cert-card-top">
+            <span class="cert-issuer">NATIONAL CADET CORPS</span>
+            <i class="fas fa-medal"></i>
+        </div>
+        <div class="cert-icon-area">
+            <i class="fas fa-medal"></i>
+        </div>
+        <div class="cert-card-content">
+            <span class="cert-category">NCC CAMP</span>
+            <h3>Ek Bharat Shreshtha Bharat (EBSB) Camp</h3>
+            <p>National Cadet Corps</p>
+            <button class="cert-view-button" data-cert="ebsb-ncc-camp.jpg">
+                <i class="fas fa-eye"></i> View Certificate
+            </button>
+        </div>
+    </div>
+</article>
+
+
+            </div>
+        </div>
+
+        <button class="cert-arrow cert-next"
+            id="cert-next" type="button"
+            aria-label="Next certification">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+
+    </div>
+
+    <!-- CERTIFICATION INDICATORS -->
+    <div class="cert-indicators" id="cert-indicators">
+        <button class="cert-dot active" data-index="0"
+            aria-label="Certification 1"></button>
+        <button class="cert-dot" data-index="1"
+            aria-label="Certification 2"></button>
+        <button class="cert-dot" data-index="2"
+            aria-label="Certification 3"></button>
+        <button class="cert-dot" data-index="3"
+            aria-label="Certification 4"></button>
+        <button class="cert-dot" data-index="4"
+            aria-label="Certification 5"></button>
+        <button class="cert-dot" data-index="5"
+            aria-label="Certification 6"></button>
+        <button class="cert-dot" data-index="6"
+            aria-label="Certification 7"></button>
+        <button class="cert-dot" data-index="7"
+            aria-label="Certification 8"></button>
+        <button class="cert-dot" data-index="8"
+            aria-label="Certification 9"></button>
+        <button class="cert-dot" data-index="9"
+            aria-label="Certification 10"></button>
+        <button class="cert-dot" data-index="10"
+            aria-label="Certification 11"></button>
+        <button class="cert-dot" data-index="11"
+            aria-label="Certification 12"></button>
+        <button class="cert-dot" data-index="12"
+            aria-label="Certification 13"></button>
+        <button class="cert-dot" data-index="13"
+            aria-label="Certification 14"></button>
+        <button class="cert-dot" data-index="14"
+            aria-label="Certification 15"></button>
+        <button class="cert-dot" data-index="15"
+            aria-label="Certification 16"></button>
+        <button class="cert-dot" data-index="16"
+            aria-label="Certification 17"></button>
+    </div>
+
+    <p class="cert-navigation-hint">
+        <i class="fas fa-arrows-left-right"></i>
+        Drag, swipe or use the arrows to explore certifications
+    </p>
+
+</div>
+
+    </div>
+
+</section>
+
+<!-- ================= END CERTIFICATIONS SECTION ================= -->
+
+<!-- ================= PROJECT DETAILS POPUP ================= -->
+
+<div class="project-modal" id="project-modal" aria-hidden="true">
+
+    <!-- Background Overlay -->
+    <div class="project-modal-backdrop" id="project-modal-backdrop"></div>
+
+    <!-- Modal Content -->
+    <div class="project-modal-container"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="project-modal-title">
+
+        <!-- Modal Header -->
+        <div class="project-modal-header">
+
+            <div class="project-modal-heading">
+
+                <p class="project-modal-label" id="project-modal-category">
+                    PROJECT DETAILS
+                </p>
+
+                <h2 id="project-modal-title">
+                    Project Title
+                </h2>
+
+            </div>
+
+            <!-- Close Button -->
+            <button
+                class="project-modal-close"
+                id="project-modal-close"
+                type="button"
+                aria-label="Close project details">
+
+                <i class="fas fa-times"></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- Dynamic Project Information -->
+        <div class="project-modal-body" id="project-modal-body">
+
+            <!-- JavaScript will load the selected project's details here -->
+
+        </div>
+
+
+    </div>
+
+</div>
+
+<!-- ================= END PROJECT DETAILS POPUP ================= -->
+
+
+<!-- ================= CERTIFICATE PREVIEW POPUP ================= -->
+
+<div class="cert-modal" id="cert-modal" aria-hidden="true">
+
+    <div class="cert-modal-backdrop" id="cert-modal-backdrop"></div>
+
+    <div class="cert-modal-container"
+         role="dialog"
+         aria-modal="true"
+         aria-label="Certificate preview">
+
+        <button class="cert-modal-close"
+                id="cert-modal-close"
+                type="button"
+                aria-label="Close certificate preview">
+            <i class="fas fa-times"></i>
+        </button>
+
+        <div class="cert-modal-image-wrapper">
+            <img
+                src=""
+                alt="Certificate Preview"
+                id="cert-modal-image"
+            >
+        </div>
+
+        <p class="cert-modal-caption" id="cert-modal-caption">
+            CERTIFICATE PREVIEW
+        </p>
+
+    </div>
+
+</div>
+
+<!-- ================= END CERTIFICATE PREVIEW POPUP ================= -->
+
+
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="contact-section">
+
+    <div class="contact-container">
+
+        <!-- LEFT SIDE -->
+        <div class="contact-left">
+
+            <p class="contact-label">GET IN TOUCH</p>
+
+            <h2 class="contact-title">
+                LET'S<br>
+                CONNECT<span>.</span>
+            </h2>
+
+            <p class="contact-description">
+                Have an opportunity, a project idea, or simply
+                want to connect? I'd love to hear from you.
+                Feel free to drop me a message.
+            </p>
+
+            <!-- SOCIAL AND CONTACT ICONS -->
+            <div class="contact-socials">
+
+                <!-- EMAIL -->
+                <a href="mailto:abhinavts725@gmail.com"
+                   aria-label="Email"
+                   title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+
+                <!-- PHONE -->
+                <a href="tel:+918590369725"
+                   aria-label="Phone"
+                   title="Phone">
+                    <i class="fas fa-phone"></i>
+                </a>
+
+                <!-- WHATSAPP -->
+                <a href="https://wa.me/918590369725"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="WhatsApp"
+                   title="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+
+                <!-- LINKEDIN -->
+                <a href="https://www.linkedin.com/in/abhinav-ts"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="LinkedIn"
+                   title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+
+                <!-- GITHUB -->
+                <a href="https://github.com/abhinavts725-hub"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="GitHub"
+                   title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <!-- INSTAGRAM -->
+                <a href="https://www.instagram.com/abhi.nav_ts"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Instagram"
+                   title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <!-- X -->
+                <a href="https://x.com/AbhinavTS07"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="X"
+                   title="X">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+
+                <!-- FACEBOOK -->
+                <a href="https://www.facebook.com/share/1X5CYD9Zgc/"
+                   target="_blank" rel="noopener noreferrer"
+                   aria-label="Facebook"
+                   title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+            </div>
+
+
+<!-- POSITIVE QUOTE FLIP CARD -->
+<div class="quote-card" id="quote-card">
+
+    <div class="quote-card-inner">
+
+        <!-- FRONT SIDE -->
+        <div class="quote-card-front">
+
+            <span class="quote-sparkle">✦</span>
+
+            <p class="quote-card-label">A LITTLE POSITIVITY</p>
+
+            <h3>
+                Need a little
+                <span>inspiration?</span>
+            </h3>
+
+            <p class="quote-card-instruction">
+                Double-tap to discover a thought for you.
+            </p>
+
+            <div class="quote-card-action">
+                <span>DOUBLE TAP</span>
+                <i class="fas fa-arrow-right"></i>
+            </div>
+
+        </div>
+
+        <!-- BACK SIDE -->
+        <div class="quote-card-back">
+
+            <span class="quote-back-label">A THOUGHT FOR YOU</span>
+
+            <span class="quote-mark">“</span>
+
+            <p class="quote-text" id="quote-text">
+                Every small step forward is still progress.
+            </p>
+
+            <span class="quote-author" id="quote-author">
+                — A reminder to yourself
+            </span>
+
+            <p class="quote-card-hint">
+                Double-tap for another thought ✨
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+        </div>
+
+
+        <!-- RIGHT SIDE: CONTACT FORM -->
+        <div class="contact-right">
+
+            <div class="contact-form-header">
+                <h3>Send Me a Message</h3>
+                <p>I'll get back to you as soon as possible.</p>
+            </div>
+
+            <form id="contact-form">
+
+                <div class="contact-input-group">
+                    <label for="contact-name">Your Name</label>
+                    <input
+                        type="text"
+                        id="contact-name"
+                        name="name"
+                        placeholder="Enter your name"
+                        minlength="2"
+                        maxlength="100"
+                        required
+                    >
+                </div>
+
+                <div class="contact-input-group">
+                    <label for="contact-email">Email Address</label>
+                    <input
+                        type="email"
+                        id="contact-email"
+                        name="email"
+                        placeholder="Enter your email address"
+                        maxlength="254"
+                        required
+                    >
+                </div>
+
+                <div class="contact-input-group">
+                    <label for="contact-subject">Subject</label>
+                    <input
+                        type="text"
+                        id="contact-subject"
+                        name="subject"
+                        placeholder="What is this regarding?"
+                        minlength="3"
+                        maxlength="150"
+                        required
+                    >
+                </div>
+
+                <div class="contact-input-group">
+                    <label for="contact-message">Your Message</label>
+                    <textarea
+                        id="contact-message"
+                        name="message"
+                        rows="5"
+                        minlength="10"
+                        maxlength="5000"
+                        placeholder="Write your message here..."
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="contact-submit-btn">
+                    <span>Send Message</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+
+                <p
+                    id="contact-form-status"
+                    class="contact-form-status"
+                    role="status"
+                    aria-live="polite"
+                ></p>
+
+            </form>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+        
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="site-footer">
+
+    </footer>
+
+
+    <!-- Main JavaScript -->
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
+
